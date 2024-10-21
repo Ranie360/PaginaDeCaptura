@@ -1,18 +1,40 @@
-/* Error: no such file or directory
- *   ,
- * 1 | @use '../abstracts';
- *   | ^^^^^^^^^^^^^^^^^^^
- *   '
- *   sass\base\_base.scss 1:1  @use
- *   sass\main.scss 5:1        root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: no such file or directory\a   \2577 \a 1 \2502  @use '../abstracts';\a   \2502  ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\base\\_base.scss 1:1  @use\a   sass\\main.scss 5:1        root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+.img {
+  max-width: 100%;
+}
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #1a1b1f;
+}
+
+.secao {
+  display: flex;
+  flex-flow: column;
+  padding: 6.4rem 2rem;
+}
+
+.container {
+  display: flex;
+  max-width: 100rem;
+}
+
+.caixa {
+  background-color: #f1f1f1;
+}
+
+/*# sourceMappingURL=style.css.map */

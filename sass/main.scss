@@ -4,14 +4,14 @@
 // 2. Base stuff
 @use 'base/base';
 @use 'base/fonts';
-@use 'base/helpers';
 @use 'base/typography';
 
 // 3. Layout-related sections
-@use 'layout/footer';
+@use 'layout/layout';
 
 // 4. Components
-@use 'components/button';
+@use 'components/button'; 
+@use 'components/caixa';
 
 // 5. Pages
 @use 'pages/inscricao';
