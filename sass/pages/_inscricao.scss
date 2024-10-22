@@ -1,4 +1,27 @@
 // -----------------------------------------------------------------------------
-// Esse arquivo contem estulos especificos da página inscrição
+// Esse arquivo contem estilos especificos da página inscrição
 // -----------------------------------------------------------------------------
 
+.secao--hero {
+  background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64957938a8a62d8071397ed5_pgc-python-bg1.webp);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+  padding-bottom: 0;
+}
+
+.container--hero {
+  position: relative;
+  align-items: end;
+  width: 100%;
+}
+
+.div-lira {
+  position: absolute;
+  transform: translateX(10%);
+  display: flex;
+  height: 60rem;
+  right: 0;
+  bottom: 0;
+}

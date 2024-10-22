@@ -8,7 +8,7 @@ html {
   font-size: 62.5%;
 }
 
-.img {
+img {
   max-width: 100%;
 }
 
@@ -22,6 +22,10 @@ body {
   color: #1a1b1f;
 }
 
+b, strong {
+  font-weight: 600;
+}
+
 .secao {
   display: flex;
   flex-flow: column;
@@ -31,10 +35,115 @@ body {
 .container {
   display: flex;
   max-width: 100rem;
+  margin: auto;
+}
+
+.botao {
+  border-radius: 5rem;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  border: solid 2px #000;
+  border-right-width: 4px;
+  border-bottom-width: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.92rem;
+}
+.botao:hover {
+  border-width: 3px;
+}
+.botao--amarelo {
+  background-color: #eebe2a;
+  border-color: rgb(181.5130434783, 140.6086956522, 14.4869565217);
+  color: #fff;
 }
 
 .caixa {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 2rem;
   background-color: #f1f1f1;
+  margin-bottom: 6.1rem;
+  border-radius: 2.5rem;
+  padding: 3.12rem 2.5rem;
+  max-width: 50rem;
+  box-shadow: inset 0 0 1.2rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+.caixa__div-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(25%, -25%);
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  width: 6.5rem;
+  height: 6.5rem;
+  padding: 1.2rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0.8rem rgba(0, 0, 0, 0.2);
+}
+.caixa__titulos {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 0.65rem;
+}
+.caixa__h1 {
+  font-size: 4.88rem;
+  line-height: 1.1;
+  color: #1c415c;
+  text-align: center;
+}
+.caixa__subtitulo {
+  font-size: 2.76rem;
+  font-weight: 700;
+}
+.caixa__subtitulo--cinza {
+  color: #4b4d4d;
+}
+.caixa__lista {
+  list-style: none;
+  font-size: 1.92rem;
+  line-height: 1.2;
+  display: flex;
+  flex-flow: column;
+  gap: 0.82rem;
+}
+.caixa__item-lista {
+  display: flex;
+  align-items: start;
+  gap: 0.82rem;
+}
+.caixa__icone {
+  width: 1.8rem;
+  margin-top: 0.21rem;
+}
+
+.secao--hero {
+  background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64957938a8a62d8071397ed5_pgc-python-bg1.webp);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  padding-bottom: 0;
+}
+
+.container--hero {
+  position: relative;
+  align-items: end;
+  width: 100%;
+}
+
+.div-lira {
+  position: absolute;
+  transform: translateX(10%);
+  display: flex;
+  height: 60rem;
+  right: 0;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
