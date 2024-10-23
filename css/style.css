@@ -20,6 +20,7 @@ html {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 /**
@@ -78,6 +79,9 @@ b, strong {
   background-color: #eebe2a;
   border-color: rgb(181.5130434783, 140.6086956522, 14.4869565217);
   color: #fff;
+}
+.botao--centralizado {
+  align-self: center;
 }
 
 .caixa {
@@ -188,10 +192,10 @@ b, strong {
   align-items: end;
   width: 100%;
 }
-.container--passo {
+.container--passo, .container--aprender {
   display: flex;
   flex-flow: column nowrap;
-  align-items: stretch;
+  align-items: start;
   justify-content: start;
   gap: 6rem;
 }
@@ -200,6 +204,10 @@ b, strong {
   grid-template-columns: repeat(3, 1fr);
   row-gap: 6rem;
   column-gap: 3rem;
+}
+.grid--aprender {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
 }
 
 .div-lira {
@@ -221,12 +229,20 @@ b, strong {
   align-self: center;
 }
 
-.passos-cabecalho {
+.cabecalho-titulo {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: start;
   gap: 1.6rem;
+}
+
+.aprender-img {
+  border-radius: 2rem;
+  transition: transform ease 200ms;
+}
+.aprender-img:hover {
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=style.css.map */

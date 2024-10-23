@@ -23,7 +23,9 @@
     background-color: abstracts.$cor-amarelo;
     border-color: color.scale(abstracts.$cor-amarelo, $lightness: -30%);
     color: #fff;
+  }
 
-
+  &--centralizado {
+    align-self: center;
   }
 }

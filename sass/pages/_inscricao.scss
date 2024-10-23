@@ -30,8 +30,9 @@
     width: 100%;
   }
 
-  &--passo {
-    @include abstracts.flex($direction: column, $gap: 6rem)
+  &--passo,
+  &--aprender {
+    @include abstracts.flex($direction: column, $gap: 6rem, $align: start)
   }
 }
 
@@ -41,6 +42,11 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 6rem;
     column-gap: 3rem;
+  }
+
+  &--aprender {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
   }
 }
 
@@ -65,6 +71,15 @@
   align-self: center;
 }
 
-.passos-cabecalho {
+.cabecalho-titulo {
   @include abstracts.flex($align: center, $gap: 1.6rem);
+}
+
+.aprender-img {
+  border-radius: 2rem;
+  transition: transform ease 200ms;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
